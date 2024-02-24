@@ -11,7 +11,7 @@
 
   },
   "dependencies": {
-    "react": "^18.2.0",
+    "react": "^18.2.0",git push orgin master
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
