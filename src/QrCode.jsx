@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export const QrCode = () => {
-  const [img, setImage] = useState("../assets/qrrrr.gif");
+  const [img, setImage] = useState("../../assets/qrrrr.gif");
   const [loading, setLoding] = useState(false);
   const [qrData, setQrData] = useState("");
   function GenerateQR() {
