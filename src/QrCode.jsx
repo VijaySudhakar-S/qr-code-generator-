@@ -1,7 +1,8 @@
 import { useState } from "react";
+import qrrrrGif from "../src/assets/qrrrr.gif";
 
 export const QrCode = () => {
-  const [img, setImage] = useState("src/assets/qrrrr.gif");
+  const [img, setImage] = useState(qrrrrGif);
   const [loading, setLoding] = useState(false);
   const [qrData, setQrData] = useState("");
   function GenerateQR() {
@@ -37,11 +38,11 @@ export const QrCode = () => {
       <img src={img} alt="" className="QR-image" />
       {loading && <p>Please Wait..</p>}
       <div className="labels">
-        <label htmlFor="dataInput">Data for QR Code</label>
+        <label htmlFor="dataInput">Sumbit URL</label>
         <input
           type="text"
           id="dataInput"
-          placeholder="Paste Your Link"
+          placeholder="https://www.example.com"
           onChange={(e) => setQrData(e.target.value)}
         />
       </div>
